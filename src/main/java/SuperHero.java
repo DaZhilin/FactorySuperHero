@@ -20,7 +20,9 @@ public class SuperHero {
     /**
      * Суперспособность героя
      */
-    private String superpower;
+    private String superPower;
 
+    protected void useSuperPower() {
+    }
 }
 

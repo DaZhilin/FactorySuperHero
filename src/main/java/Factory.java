@@ -1,63 +1,62 @@
 public class Factory {
 
-    public static void main(String[] args){
-        SuperHero batman = new SuperHero();
+    public Batman createBatman() {
+        Batman batman = new Batman();
         batman.setName("Batman");
         batman.setStrength(7);
         batman.setLabel("DC");
-        batman.setSuperpower("ужасный крик - Ааа, я бэтмэн!");
-        System.out.println("Вами создан: " + batman);
+        batman.setSuperPower("ужасный крик - Ааа, я бэтмэн!");
 
-        SuperHero aquaman = new SuperHero();
+        return batman;
+    }
+
+    public Aquaman createAquaman() {
+        Aquaman aquaman = new Aquaman();
         aquaman.setName("AquaMan");
         aquaman.setStrength(5);
         aquaman.setLabel("DC");
-        aquaman.setSuperpower("Взмах трезубцем");
+        aquaman.setSuperPower("Трезубец");
 
-        System.out.println("Вами создан: " + aquaman);
+        return aquaman;
+    }
 
-        SuperHero hulk = new SuperHero();
+    public Hulk createHulk() {
+        Hulk hulk = new Hulk();
         hulk.setName("Hulk");
         hulk.setStrength(10);
         hulk.setLabel("Marvel");
-        hulk.setSuperpower("Халк крушить");
+        hulk.setSuperPower("Халк прыжок");
 
-        System.out.println("Вами создан: " + hulk);
+        return hulk;
+    }
 
-        SuperHero spiderMan = new SuperHero();
+    public Spiderman createSpiderMan() {
+        Spiderman spiderMan = new Spiderman();
         spiderMan.setName("SpiderMan");
         spiderMan.setStrength(7);
         spiderMan.setLabel("Marvel");
-        spiderMan.setSuperpower("Паутина");
+        spiderMan.setSuperPower("Паутина");
 
-        System.out.println("Вами создан: " + spiderMan);
+        return spiderMan;
+    }
 
-        SuperHero superMan = new SuperHero();
+    public Superman createSuoerMan() {
+        Superman superMan = new Superman();
         superMan.setName("Superman");
         superMan.setStrength(10);
         superMan.setLabel("DC");
-        superMan.setSuperpower("Я с криптона");
+        superMan.setSuperPower("Сверхскорость");
 
-        System.out.println("Вами создан: " + superMan);
+        return superMan;
+    }
 
-        SuperHero wolverine = new SuperHero();
+    public Wolverine createWolverine() {
+        Wolverine wolverine = new Wolverine();
         wolverine.setName("Wolverine");
         wolverine.setStrength(8);
         wolverine.setLabel("Marvel");
-        wolverine.setSuperpower("Когти");
+        wolverine.setSuperPower("Когти");
 
-        System.out.println("Вами создан: " + wolverine);
-
-        Object[] hero = new Object[6];
-        hero[0] = batman;
-        hero[1] = aquaman;
-        hero[2] = hulk;
-        hero[3] = spiderMan;
-        hero[4] = superMan;
-        hero[5] = wolverine;
-
-        new Arena(hero);
-
-
+        return wolverine;
     }
 }

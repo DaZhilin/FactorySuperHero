@@ -1,27 +1,21 @@
+import java.util.Random;
+
 public class Arena {
-    /**
-     * Создание переменной с рандомным числом от 0 до 5, для выбора случайного героя,
-     * который войдет на арену первым :D
-     */
-    private int a = (int) (Math.random()*6);
-    /**
-     * Создание переменной со случайным числом от 0 до 5, для выбора второго случайного героя.
-     */
-    private int b = (int) (Math.random()*6);
-    /**
-     * Создание третьей переменной со случайным числом от 0-100, которая в процессе поможет определить победителя
-     */
-    private int c = (int) (Math.random()*100);
 
-    public Arena(Object[] hero) {
-        if (a == b)
-            System.out.println("В этот раз судьба решила не испытывать силы нашего героя. Попробуйте повторно" );
+    private final int RANGE = 100;
+    private final int BORDOR = 50;
+    private final Random RANDOM = new Random();
 
-        else
-            System.out.println(c > 50? "В этот раз победу одержал: " + hero[a] : "В этот раз победу одержал: " + hero[b]);
-        System.out.println("Сегодня в бою учавствовали следующие: \n" + hero[a] + "\n" + hero[b]);
-
-
-
+    public void fight (SuperHero superHero1, SuperHero superHero2) {
+        System.out.println("На арену выходят " + superHero1 + " и " + superHero2);
+        superHero1.useSuperPower();
+        superHero2.useSuperPower();
+        if ((RANDOM.nextInt(RANGE)) > BORDOR) {
+            System.out.println("В этой дуэли побеждает: " + superHero1);
+        }
+        else {
+            System.out.println("В этой дуэли побеждает: " + superHero2);
+        }
+        System.out.println("К дуэли готовятся следующие участники.\n");
     }
 }
