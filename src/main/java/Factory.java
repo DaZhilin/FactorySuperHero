@@ -15,7 +15,7 @@ public class Factory {
         aquaman.setName("AquaMan");
         aquaman.setStrength(5);
         aquaman.setLabel("DC");
-        aquaman.setSuperPower("Трезубец");
+        aquaman.setSuperPower("трезубец");
 
         return aquaman;
     }
@@ -25,7 +25,7 @@ public class Factory {
         hulk.setName("Hulk");
         hulk.setStrength(10);
         hulk.setLabel("Marvel");
-        hulk.setSuperPower("Халк прыжок");
+        hulk.setSuperPower("прыжок");
 
         return hulk;
     }
@@ -35,7 +35,7 @@ public class Factory {
         spiderMan.setName("SpiderMan");
         spiderMan.setStrength(7);
         spiderMan.setLabel("Marvel");
-        spiderMan.setSuperPower("Паутина");
+        spiderMan.setSuperPower("паутину");
 
         return spiderMan;
     }
@@ -45,7 +45,7 @@ public class Factory {
         superMan.setName("Superman");
         superMan.setStrength(10);
         superMan.setLabel("DC");
-        superMan.setSuperPower("Сверхскорость");
+        superMan.setSuperPower("сверхскорость");
 
         return superMan;
     }
@@ -55,7 +55,7 @@ public class Factory {
         wolverine.setName("Wolverine");
         wolverine.setStrength(8);
         wolverine.setLabel("Marvel");
-        wolverine.setSuperPower("Когти");
+        wolverine.setSuperPower("когти");
 
         return wolverine;
     }

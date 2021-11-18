@@ -11,11 +11,10 @@ public class Arena {
         superHero1.useSuperPower();
         superHero2.useSuperPower();
         if ((RANDOM.nextInt(RANGE)) > BORDOR) {
-            System.out.println("В этой дуэли побеждает: " + superHero1);
+            System.out.println("В этой дуэли побеждает: " + superHero1 + "\n");
         }
         else {
-            System.out.println("В этой дуэли побеждает: " + superHero2);
+            System.out.println("В этой дуэли побеждает: " + superHero2 + "\n");
         }
-        System.out.println("К дуэли готовятся следующие участники.\n");
     }
 }

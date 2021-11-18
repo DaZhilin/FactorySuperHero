@@ -23,6 +23,7 @@ public class SuperHero {
     private String superPower;
 
     protected void useSuperPower() {
+        System.out.println(getName() + " использует " + getSuperPower());
     }
 }
 
